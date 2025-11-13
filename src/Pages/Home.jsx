@@ -161,7 +161,7 @@ const Home = () => {
                 onClick={() => setActiveTab(tab)}
                 className={`uppercase text-sm tracking-wide ${
                   activeTab === tab
-                    ? "border-b-2 border-black pb-1 text-black"
+                    ? "border-b-2 border-[#0b3d91] pb-1 text-[#0b3d91]"
                     : "text-gray-600"
                 }`}
               >
@@ -201,7 +201,7 @@ const Home = () => {
                   </div>
 
                   <h3
-                    className="text-base font-semibold mb-2 text-gray-800 line-clamp-2 hover:text-black cursor-pointer"
+                    className="text-base font-semibold mb-2 text-gray-800 line-clamp-2 hover:text-[#0b3d91] cursor-pointer"
                     onClick={() => handleProductClick(product.sku)}
                   >
                     {product.name || "Product Name"}
@@ -238,7 +238,7 @@ const Home = () => {
                       onChange={(e) =>
                         handleQuantityChange(product.sku, e.target.value)
                       }
-                      className="w-12 text-center border border-gray-300 rounded-md p-1 focus:ring-1 focus:ring-black text-sm"
+                      className="w-12 text-center border border-gray-300 rounded-md p-1 focus:ring-1 focus:ring-[#0b3d91] text-sm"
                       onClick={(e) => e.stopPropagation()}
                     />
                     <button

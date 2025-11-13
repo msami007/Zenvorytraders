@@ -124,7 +124,7 @@ const ProductCatalogue = () => {
           <label className="text-gray-700 font-medium">Sort by:</label>
           <select
             onChange={(e) => setSortOption(e.target.value)}
-            className="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-[#000000]"
+            className="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-[#0b3d91]"
           >
             <option value="">Default</option>
             <option value="rating">By Rating</option>
@@ -139,7 +139,7 @@ const ProductCatalogue = () => {
             placeholder="Search with Product Name only"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full border border-gray-300 rounded-md p-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-[#000000]"
+            className="w-full border border-gray-300 rounded-md p-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-[#0b3d91]"
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -206,7 +206,7 @@ const ProductCatalogue = () => {
 
               {/* Name */}
               <div
-                className="md:col-span-3 text-gray-800 cursor-pointer hover:text-black"
+                className="md:col-span-3 text-gray-800 cursor-pointer hover:text-[#0b3d91]"
                 onClick={() => navigate(`/product/${product.sku}`)}
               >
                 <div className="text-sm md:hidden text-gray-500">Name</div>
@@ -227,7 +227,7 @@ const ProductCatalogue = () => {
                   onChange={(e) =>
                     handleQuantityChange(product.sku, e.target.value)
                   }
-                  className="w-24 md:w-16 text-center border border-gray-300 rounded-md p-1 focus:ring-1 focus:ring-[#000000]"
+                  className="w-24 md:w-16 text-center border border-gray-300 rounded-md p-1 focus:ring-1 focus:ring-[#0b3d91]"
                 />
               </div>
 

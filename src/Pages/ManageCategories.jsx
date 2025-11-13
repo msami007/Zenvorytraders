@@ -108,7 +108,7 @@ export default function ManageCategories() {
                     </div>
                     <button
                         onClick={() => { setFormData(initialForm); setShowAddModal(true); }}
-                        className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800"
+                        className="bg-[#0b3d91] text-white px-4 py-2 rounded-md hover:bg-gray-800"
                     >
                         Add New Category
                     </button>
@@ -199,7 +199,7 @@ export default function ManageCategories() {
                                     name="name"
                                     value={formData.name}
                                     onChange={handleInputChange}
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm"
+                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0b3d91] focus:ring-[#0b3d91] sm:text-sm"
                                     required
                                 />
                             </div>
@@ -214,7 +214,7 @@ export default function ManageCategories() {
                                 </button>
                                 <button
                                     type="submit"
-                                    className="px-4 py-2 text-sm font-medium text-white bg-black hover:bg-gray-800 rounded-md"
+                                    className="px-4 py-2 text-sm font-medium text-white bg-[#0b3d91] hover:bg-gray-800 rounded-md"
                                 >
                                     {formData.id ? 'Update Category' : 'Add Category'}
                                 </button>

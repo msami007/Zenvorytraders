@@ -178,7 +178,7 @@ const CategoryRow = ({ category, products, onAddToCart }) => {
       {/* "See All Products" button */}
       <div className="text-center mt-6">
         <button
-          className="px-6 py-2 bg-[#000000] text-white rounded-lg hover:bg-[#000000] transition-all"
+          className="px-6 py-2 bg-[#0b3d91] text-white rounded-lg hover:bg-[#092b56] transition-all"
           onClick={() => alert(`Show all products for ${category}`)}
         >
           See All {category} Products

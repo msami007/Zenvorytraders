@@ -28,7 +28,7 @@ const Footer = () => {
   };
 
   return (
-  <footer className="bg-[#000000] text-white py-10 px-6 md:px-16">
+  <footer className="bg-[#0b3d91] text-white py-10 px-6 md:px-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 border-b border-gray-700 pb-10">
         {/* Brand Info */}
         <div className="space-y-4">
@@ -133,9 +133,9 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Email Address"
-              className="w-full md:w-64 px-4 py-2 rounded-md text-black focus:outline-none"
+              className="w-full md:w-64 px-4 py-2 rounded-md text-[#0b3d91] focus:outline-none"
             />
-            <button className="bg-[#f9b233] text-[#000000] font-semibold py-2 rounded-md hover:bg-yellow-500 transition w-full md:w-auto">
+            <button className="bg-[#f9b233] text-[#0b3d91] font-semibold py-2 rounded-md hover:bg-yellow-500 transition w-full md:w-auto">
               SUBSCRIBE NOW
             </button>
           </div>

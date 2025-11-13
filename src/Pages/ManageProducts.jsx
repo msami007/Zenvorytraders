@@ -192,7 +192,7 @@ export default function ManageProducts() {
                     </div>
                     <button
                         onClick={() => { setFormData(initialForm); setShowAddModal(true); }}
-                        className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800"
+                        className="bg-[#0b3d91] text-white px-4 py-2 rounded-md hover:bg-gray-800"
                     >
                         Add New Product
                     </button>
@@ -317,7 +317,7 @@ export default function ManageProducts() {
                                     name="sku"
                                     value={formData.sku}
                                     onChange={handleInputChange}
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm"
+                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0b3d91] focus:ring-[#0b3d91] sm:text-sm"
                                     required
                                 />
                             </div>
@@ -329,7 +329,7 @@ export default function ManageProducts() {
                                     name="name"
                                     value={formData.name}
                                     onChange={handleInputChange}
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm"
+                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0b3d91] focus:ring-[#0b3d91] sm:text-sm"
                                     required
                                 />
                             </div>
@@ -341,7 +341,7 @@ export default function ManageProducts() {
                                     value={formData.description}
                                     onChange={handleInputChange}
                                     rows="3"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm"
+                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0b3d91] focus:ring-[#0b3d91] sm:text-sm"
                                 />
                             </div>
 
@@ -354,7 +354,7 @@ export default function ManageProducts() {
                                         value={formData.price_200_500}
                                         onChange={handleInputChange}
                                         step="0.01"
-                                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm"
+                                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0b3d91] focus:ring-[#0b3d91] sm:text-sm"
                                         required
                                     />
                                 </div>
@@ -367,7 +367,7 @@ export default function ManageProducts() {
                                         value={formData.price_501_plus}
                                         onChange={handleInputChange}
                                         step="0.01"
-                                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm"
+                                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0b3d91] focus:ring-[#0b3d91] sm:text-sm"
                                         required
                                     />
                                 </div>
@@ -381,7 +381,7 @@ export default function ManageProducts() {
                                         name="weight"
                                         value={formData.weight}
                                         onChange={handleInputChange}
-                                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm"
+                                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0b3d91] focus:ring-[#0b3d91] sm:text-sm"
                                     />
                                 </div>
 
@@ -392,7 +392,7 @@ export default function ManageProducts() {
                                         name="dimensions"
                                         value={formData.dimensions}
                                         onChange={handleInputChange}
-                                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm"
+                                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0b3d91] focus:ring-[#0b3d91] sm:text-sm"
                                     />
                                 </div>
                             </div>
@@ -404,7 +404,7 @@ export default function ManageProducts() {
                                     name="quantity"
                                     value={formData.quantity}
                                     onChange={handleInputChange}
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm"
+                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0b3d91] focus:ring-[#0b3d91] sm:text-sm"
                                     required
                                 />
                             </div>
@@ -415,7 +415,7 @@ export default function ManageProducts() {
                                     name="category_id"
                                     value={formData.category_id}
                                     onChange={handleInputChange}
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black sm:text-sm"
+                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0b3d91] focus:ring-[#0b3d91] sm:text-sm"
                                 >
                                     <option value="">Select a category</option>
                                     {categories.map((category, index) => (
@@ -469,7 +469,7 @@ export default function ManageProducts() {
                                         file:mr-4 file:py-2 file:px-4
                                         file:rounded-md file:border-0
                                         file:text-sm file:font-semibold
-                                        file:bg-black file:text-white
+                                        file:bg-[#0b3d91] file:text-white
                                         hover:file:bg-gray-800"
                                 />
                                 <p className="mt-1 text-sm text-gray-500">
@@ -507,7 +507,7 @@ export default function ManageProducts() {
                                 </button>
                                 <button
                                     type="submit"
-                                    className="px-4 py-2 text-sm font-medium text-white bg-black hover:bg-gray-800 rounded-md disabled:bg-gray-400"
+                                    className="px-4 py-2 text-sm font-medium text-white bg-[#0b3d91] hover:bg-gray-800 rounded-md disabled:bg-gray-400"
                                     disabled={uploadProgress > 0 && uploadProgress < 100}
                                 >
                                     {formData.id ? 'Update Product' : 'Add Product'}

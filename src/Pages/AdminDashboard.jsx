@@ -47,7 +47,7 @@ export default function AdminDashboard() {
                             <span className="text-gray-600">Welcome, {admin.name}</span>
                             <button
                                 onClick={handleLogout}
-                                className="px-4 py-2 text-sm font-medium text-white bg-black rounded-md hover:bg-gray-800"
+                                className="px-4 py-2 text-sm font-medium text-white bg-[#0b3d91] rounded-md hover:bg-gray-800"
                             >
                                 Logout
                             </button>

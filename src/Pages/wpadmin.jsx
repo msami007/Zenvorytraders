@@ -97,7 +97,7 @@ export default function WPAdmin() {
                                 name="username"
                                 type="text"
                                 required
-                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-black focus:border-black focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-[#0b3d91] focus:border-[#0b3d91] focus:z-10 sm:text-sm"
                                 placeholder="Username"
                                 value={formData.username}
                                 onChange={handleChange}
@@ -112,7 +112,7 @@ export default function WPAdmin() {
                                 name="password"
                                 type="password"
                                 required
-                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-black focus:border-black focus:z-10 sm:text-sm"
+                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-[#0b3d91] focus:border-[#0b3d91] focus:z-10 sm:text-sm"
                                 placeholder="Password"
                                 value={formData.password}
                                 onChange={handleChange}
@@ -130,7 +130,7 @@ export default function WPAdmin() {
                         <button
                             type="submit"
                             disabled={loading}
-                            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#0b3d91] hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0b3d91]"
                         >
                             {loading ? 'Signing in...' : 'Sign in'}
                         </button>

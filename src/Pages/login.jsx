@@ -45,7 +45,7 @@ export default function Login() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
-  <h2 className="text-2xl font-bold mb-6 text-center text-[#000000]">Login</h2>
+  <h2 className="text-2xl font-bold mb-6 text-center text-[#0b3d91]">Login</h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
@@ -54,7 +54,7 @@ export default function Login() {
             placeholder="Email Address"
             value={formData.email}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-[#000000]"
+            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-[#0b3d91]"
             required
           />
           <input
@@ -63,13 +63,13 @@ export default function Login() {
             placeholder="Password"
             value={formData.password}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-[#000000]"
+            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-[#0b3d91]"
             required
           />
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#000000] text-white py-2 rounded-md hover:bg-[#111111] transition"
+            className="w-full bg-[#0b3d91] text-white py-2 rounded-md hover:bg-[#111111] transition"
           >
             {loading ? "Logging in..." : "Login"}
           </button>
@@ -81,7 +81,7 @@ export default function Login() {
 
         <p className="mt-4 text-center text-gray-600">
           Don’t have an account?{" "}
-          <a href="/signup" className="text-[#000000] font-medium hover:underline">
+          <a href="/signup" className="text-[#0b3d91] font-medium hover:underline">
             Sign Up
           </a>
         </p>
