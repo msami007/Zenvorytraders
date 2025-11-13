@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "https://putratraders.com/api"; // your API folder
+const API_BASE = "https://mejistify.com/api"; // your API folder
 
 // fixed category order
 const CATEGORY_ORDER = [

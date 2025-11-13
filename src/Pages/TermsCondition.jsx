@@ -136,11 +136,11 @@ const TermsCondition = () => {
               <p className="mb-2">
                 Questions about the Terms of Service should be sent to us at:
               </p>
-              <p className="text-blue-600 font-medium">info@putratraders.com</p>
+              <p className="text-blue-600 font-medium">sales@mejistify.com</p>
               <p className="mt-4">
-                Putra Traders<br />
-                5900 BALCONES DR STE 19007<br />
-                AUSTIN, TX 78731<br />
+                Mejistify Traders<br />
+                30 N Gould Ste 40990<br />
+                Sheridan, WY 82801<br />
                 United States
               </p>
             </section>

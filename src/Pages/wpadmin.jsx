@@ -31,7 +31,7 @@ export default function WPAdmin() {
         setLoading(true);
 
         try {
-            const response = await fetch('https://putratraders.com/api/admin_login.php', {
+            const response = await fetch('https://mejistify.com/api/admin_login.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ export default function WPAdmin() {
                     <img
                         className="mx-auto h-12 w-auto"
                         src="/logo.jpg"
-                        alt="Putra Traders Admin"
+                        alt="Mejistify Traders Admin"
                     />
                     <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
                         Admin Login

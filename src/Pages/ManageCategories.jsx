@@ -18,7 +18,7 @@ export default function ManageCategories() {
 
     const fetchCategories = async () => {
         try {
-            const response = await fetch('https://putratraders.com/api/fetch_all_categories_admin.php');
+            const response = await fetch('https://mejistify.com/api/fetch_all_categories_admin.php');
             const data = await response.json();
             if (Array.isArray(data)) {
                 setCategories(data);
@@ -48,8 +48,8 @@ export default function ManageCategories() {
 
         try {
             const endpoint = formData.id 
-                ? 'https://putratraders.com/api/update_category.php'
-                : 'https://putratraders.com/api/add_category.php';
+                ? 'https://mejistify.com/api/update_category.php'
+                : 'https://mejistify.com/api/add_category.php';
 
             const response = await fetch(endpoint, {
                 method: 'POST',
@@ -77,7 +77,7 @@ export default function ManageCategories() {
         if (!window.confirm('Are you sure you want to delete this category? This cannot be undone if the category is not in use.')) return;
 
         try {
-            const response = await fetch('https://putratraders.com/api/delete_category.php', {
+            const response = await fetch('https://mejistify.com/api/delete_category.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

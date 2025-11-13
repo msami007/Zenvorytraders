@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ShoppingCart } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "https://putratraders.com/api";
+const API_BASE = "https://mejistify.com/api";
 
 const FeaturedProducts = () => {
   const [featuredProducts, setFeaturedProducts] = useState([]);

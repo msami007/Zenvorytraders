@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "https://putratraders.com/api"; // ✅ your backend API base
+const API_BASE = "https://mejistify.com/api"; // ✅ your backend API base
 
 const ProductCatalogue = () => {
   const [products, setProducts] = useState([]);

@@ -9,7 +9,7 @@ const Footer = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("https://putratraders.com/api/fetch_all_categories.php");
+        const res = await fetch("https://mejistify.com/api/fetch_all_categories.php");
         const data = await res.json();
         if (Array.isArray(data)) setCategories(data.slice(0, 6));
       } catch (err) {
@@ -34,12 +34,12 @@ const Footer = () => {
         <div className="space-y-4">
           <img
             src="/logo.jpg"
-            alt="Putra Traders"
+            alt="mejistify Traders"
             className="w-32 md:w-48 h-auto object-contain"
           />
           <div className="flex items-start gap-2">
             <MapPin size={18} className="mt-1 text-[#f9b233]" />
-            <p>5900 BALCONES DR STE 19007 AUSTIN, TX 78731</p>
+            <p>30 N Gould Ste 40990 Sheridan, WY 82801</p>
           </div>
           <div className="flex items-center gap-2">
             <Phone size={18} className="text-[#f9b233]" />
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-2">
             <Mail size={18} className="text-[#f9b233]" />
-            <p>info@putratraders.com</p>
+            <p>info@mejistify.com</p>
           </div>
         </div>
 
@@ -196,7 +196,7 @@ const Footer = () => {
         </div>
 
         <p className="text-center md:text-right">
-          Copyright © 2024 Putra Traders. All rights reserved.
+          Copyright © 2024 mejistify Traders. All rights reserved.
         </p>
       </div>
     </footer>

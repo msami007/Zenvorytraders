@@ -4,7 +4,7 @@ import Reviews from "../Components/Reviews";
 import { ShoppingCart } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "https://putratraders.com/api";
+const API_BASE = "https://mejistify.com/api";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -132,7 +132,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center text-white">
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4">
-            PUTRA TRADERS
+            MEJISTIFY TRADERS
           </h1>
           <p className="text-xl sm:text-2xl text-gray-200">
             Global Trade Excellence

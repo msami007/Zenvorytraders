@@ -167,7 +167,7 @@ const PaymentProcess = () => {
                 If you have any questions or need assistance with the payment process, please contact our 
                 customer support team:
               </p>
-              <p className="text-blue-600 font-medium mb-2">info@putratraders.com</p>
+              <p className="text-blue-600 font-medium mb-2">sales@mejistify.com</p>
               <p className="text-blue-600 font-medium">+1 (512) 5430711</p>
               <p className="mt-4 text-sm text-gray-600">
                 Our customer support team is available Monday through Friday, 9:00 AM to 6:00 PM EST.

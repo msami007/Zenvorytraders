@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
 
-const API_BASE = "https://putratraders.com/api";
+const API_BASE = "https://mejistify.com/api";
 
 const buildFullImageUrl = (img) => {
   if (!img) return "/images/products/placeholder.png";
@@ -71,7 +71,7 @@ const Category = () => {
     const fetchCategories = async () => {
       try {
         setCategoriesLoading(true);
-        const res = await fetch("https://putratraders.com/api/fetch_all_categories.php");
+        const res = await fetch("https://mejistify.com/api/fetch_all_categories.php");
         const data = await res.json();
         if (Array.isArray(data)) setCategories(data);
         else setCategories([]);

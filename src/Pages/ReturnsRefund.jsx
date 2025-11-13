@@ -85,7 +85,7 @@ const ReturnsRefund = () => {
               </p>
               <p className="mb-4">
                 If you've done all of this and you still have not received your refund yet, please contact 
-                us at info@putratraders.com.
+                us at sales@mejistify.com.
               </p>
             </section>
 
@@ -151,9 +151,9 @@ const ReturnsRefund = () => {
             <section>
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Need Help?</h2>
               <p className="mb-2">
-                Contact us at info@putratraders.com for questions related to refunds and returns.
+                Contact us at sales@mejistify.com for questions related to refunds and returns.
               </p>
-              <p className="text-blue-600 font-medium">info@putratraders.com</p>
+              <p className="text-blue-600 font-medium">sales@mejistify.com</p>
             </section>
           </div>
         </div>

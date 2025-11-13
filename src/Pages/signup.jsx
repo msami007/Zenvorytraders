@@ -23,7 +23,7 @@ export default function Signup() {
     setMessage("");
 
     try {
-      const res = await fetch("https://putratraders.com/api/signup.php", {
+      const res = await fetch("https://mejistify.com/api/signup.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
