@@ -36,7 +36,7 @@ export default function ManageProducts() {
 
     const fetchProducts = async () => {
         try {
-            const response = await fetch('https://mejistify.com/api/fetch_all.php', {
+            const response = await fetch('https://zenvorytradersllc.com/api/fetch_all.php', {
                 cache: 'no-store'
             });
             const data = await response.json();
@@ -56,7 +56,7 @@ export default function ManageProducts() {
 
     const fetchCategories = async () => {
         try {
-            const response = await fetch('https://mejistify.com/api/fetch_all_categories_admin.php');
+            const response = await fetch('https://zenvorytradersllc.com/api/fetch_all_categories_admin.php');
             const data = await response.json();
             console.log('Fetched categories:', data);
             if (Array.isArray(data)) {
@@ -109,8 +109,8 @@ export default function ManageProducts() {
 
         try {
             const endpoint = formData.id
-                ? 'https://mejistify.com/api/update_product.php'
-                : 'https://mejistify.com/api/add_product.php';
+                ? 'https://zenvorytradersllc.com/api/update_product.php'
+                : 'https://zenvorytradersllc.com/api/add_product.php';
             console.log('Endpoint:', endpoint);
             console.log('Sending Data:', formData);
             // Use XMLHttpRequest for upload progress
@@ -160,7 +160,7 @@ export default function ManageProducts() {
         if (!window.confirm('Are you sure you want to delete this product?')) return;
 
         try {
-            const response = await fetch('https://mejistify.com/api/delete_product.php', {
+            const response = await fetch('https://zenvorytradersllc.com/api/delete_product.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -231,7 +231,7 @@ export default function ManageProducts() {
                                 products.map((product) => {
                                     const imageUrl = product.image_url?.startsWith('http')
                                         ? product.image_url
-                                        : `https://mejistify.com/${product.image_url}`;
+                                        : `https://zenvorytradersllc.com/${product.image_url}`;
 
                                     return (
                                         <tr key={product.id}>
@@ -436,7 +436,7 @@ export default function ManageProducts() {
                                             {formData.existing_images.map((img, i) => (
                                                 <div key={i} className="relative group">
                                                     <img
-                                                        src={img.startsWith('http') ? img : `https://mejistify.com/${img}`}
+                                                        src={img.startsWith('http') ? img : `https://zenvorytradersllc.com/${img}`}
                                                         alt={`product-${i}`}
                                                         className="w-20 h-20 object-contain border rounded-md"
                                                     />

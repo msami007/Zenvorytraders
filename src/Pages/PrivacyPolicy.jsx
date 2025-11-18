@@ -120,7 +120,7 @@ const PrivacyPolicy = () => {
               <p className="mb-2">
                 If you have any questions about this Privacy Policy, please contact us at:
               </p>
-              <p className="text-blue-600 font-medium">sales@mejistify.com</p>
+              <p className="text-blue-600 font-medium">sales@zenvorytradersllc.com</p>
               <p className="mt-4">Last Updated: {new Date().getFullYear()}</p>
             </section>
           </div>

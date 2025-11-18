@@ -136,9 +136,9 @@ const TermsCondition = () => {
               <p className="mb-2">
                 Questions about the Terms of Service should be sent to us at:
               </p>
-              <p className="text-blue-600 font-medium">sales@mejistify.com</p>
+              <p className="text-blue-600 font-medium">sales@zenvorytradersllc.com</p>
               <p className="mt-4">
-                Mejistify Traders<br />
+                zenvorytradersllc Traders<br />
                 30 N Gould Ste 40990<br />
                 Sheridan, WY 82801<br />
                 United States

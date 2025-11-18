@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-const API_BASE = "https://mejistify.com/api";
+const API_BASE = "https://zenvorytradersllc.com/api";
 
 const buildFullImageUrl = (img) => {
   if (!img) return "/placeholder.png";

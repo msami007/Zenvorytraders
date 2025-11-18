@@ -30,7 +30,7 @@ export default function Navbar() {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const res = await fetch("https://mejistify.com/api/fetch_all_categories.php");
+                const res = await fetch("https://zenvorytradersllc.com/api/fetch_all_categories.php");
                 const data = await res.json();
                 if (Array.isArray(data)) setCategories(data);
             } catch (error) {

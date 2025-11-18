@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "https://mejistify.com/api";
+const API_BASE = "https://zenvorytradersllc.com/api";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -332,11 +332,11 @@ const Cart = () => {
               >
                 <div className="flex items-center space-x-4 flex-1">
                   <img
-                    src={item.image_url && item.image_url.startsWith('http') ? item.image_url : `https://mejistify.com${item.image_url}`}
+                    src={item.image_url && item.image_url.startsWith('http') ? item.image_url : `https://zenvorytradersllc.com${item.image_url}`}
                     alt={item.name}
                     className="w-20 h-20 md:w-24 md:h-24 object-contain rounded-md border"
                     onError={(e) => {
-                      e.target.src = 'https://mejistify.com/images/products/placeholder.png';
+                      e.target.src = 'https://zenvorytradersllc.com/images/products/placeholder.png';
                     }}
                   />
                   <div className="flex-1">

@@ -9,7 +9,7 @@ const Footer = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("https://mejistify.com/api/fetch_all_categories.php");
+        const res = await fetch("https://zenvorytradersllc.com/api/fetch_all_categories.php");
         const data = await res.json();
         if (Array.isArray(data)) setCategories(data.slice(0, 6));
       } catch (err) {
@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="space-y-4">
           <img
             src="/logo.jpg"
-            alt="mejistify Traders"
+            alt="zenvorytradersllc Traders"
             className="w-32 md:w-48 h-auto object-contain"
           />
           <div className="flex items-start gap-2">
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-2">
             <Mail size={18} className="text-[#f9b233]" />
-            <p>info@mejistify.com</p>
+            <p>info@zenvorytradersllc.com</p>
           </div>
         </div>
 
@@ -214,7 +214,7 @@ const Footer = () => {
         </div>
 
         <p className="text-center md:text-right">
-          Copyright © 2024 mejistify Traders. All rights reserved.
+          Copyright © 2024 zenvorytradersllc Traders. All rights reserved.
         </p>
       </div>
     </footer>

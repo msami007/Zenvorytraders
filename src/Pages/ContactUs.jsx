@@ -5,7 +5,7 @@ const ContactUs = () => {
 
   const submitForm = async (e) => {
   e.preventDefault();
-  await fetch("https://mejistify.com/api/send-contact.php",{
+  await fetch("https://zenvorytradersllc.com/api/send-contact.php",{
     method:"POST",
     headers:{ "Content-Type":"application/json" },
     body:JSON.stringify({
@@ -90,16 +90,16 @@ const ContactUs = () => {
                   <h3 className="font-semibold text-gray-900 mb-2">Email Us</h3>
                   <div className="space-y-2">
                     <a
-                      href="mailto:info@mejistify.com"
+                      href="mailto:info@zenvorytradersllc.com"
                       className="block text-blue-600 hover:text-blue-700 font-medium transition-colors"
                     >
-                      info@mejistify.com
+                      info@zenvorytradersllc.com
                     </a>
                     <a
-                      href="mailto:sales@mejistify.com"
+                      href="mailto:sales@zenvorytradersllc.com"
                       className="block text-blue-600 hover:text-blue-700 font-medium transition-colors"
                     >
-                      sales@mejistify.com
+                      sales@zenvorytradersllc.com
                     </a>
                   </div>
                 </div>
@@ -241,7 +241,7 @@ const ContactUs = () => {
             <div className="lg:col-span-2">
               <div className="rounded-2xl overflow-hidden shadow-lg h-96">
                 <iframe
-                  title="Mejistify Traders Location"
+                  title="zenvorytradersllc Traders Location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.74292825507!2d-97.75986558488036!3d30.344150881777202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ca2e5b8efb77%3A0x91b8aeb295b64f1b!2s5900%20Balcones%20Dr%20STE%2019007%2C%20Austin%2C%20TX%2078731%2C%20USA!5e0!3m2!1sen!2s!4v1730699943348!5m2!1sen!2s"
                   width="100%"
                   height="100%"
@@ -302,7 +302,7 @@ const ContactUs = () => {
               📞 Call Now
             </a>
             <a
-              href="mailto:info@mejistify.com"
+              href="mailto:info@zenvorytradersllc.com"
               className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-blue-600 transform hover:-translate-y-1 transition-all duration-200"
             >
               ✉️ Email Us

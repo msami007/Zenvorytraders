@@ -37,7 +37,7 @@ export default function AdminDashboard() {
                             <img
                                 className="h-8 w-auto"
                                 src="/logo.jpg"
-                                alt="Mejistify Traders Admin"
+                                alt="zenvorytradersllc Traders Admin"
                             />
                             <span className="ml-4 text-lg font-semibold text-gray-900">
                                 Admin Dashboard
