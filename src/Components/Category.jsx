@@ -6,9 +6,13 @@ import { ShoppingCart } from "lucide-react";
 const API_BASE = "https://zenvorytradersllc.com/api";
 
 const buildFullImageUrl = (img) => {
-  if (!img) return "/images/products/placeholder.png";
-  if (img.startsWith("http")) return img;
-  return `${API_BASE.replace("/api", "")}${img.startsWith("/") ? "" : "/"}${img}`;
+  if (!img || typeof img !== "string") return "/placeholder.png";
+
+  const root = "https://zenvorytradersllc.com/";
+
+  return img.startsWith("http")
+    ? img
+    : root + img.replace(/^\/+/, "");
 };
 
 const RatingStars = ({ rating = 0 }) => {

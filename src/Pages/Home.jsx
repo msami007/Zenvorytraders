@@ -16,9 +16,12 @@ const Home = () => {
   // ✅ Build full image URL
   const buildFullImageUrl = (img) => {
     if (!img || typeof img !== "string") return "/placeholder.png";
+
+    const root = "https://zenvorytradersllc.com/";
+
     return img.startsWith("http")
       ? img
-      : `${API_BASE.replace("/api", "")}/${img.replace(/^\/+/, "")}`;
+      : root + img.replace(/^\/+/, "");
   };
 
   // ✅ Navigate to product details
