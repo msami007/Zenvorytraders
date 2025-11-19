@@ -191,9 +191,9 @@ const Home = () => {
                     className="relative w-full h-36 md:h-48 flex items-center justify-center mb-5 overflow-hidden cursor-pointer"
                     onClick={() => handleProductClick(product.sku)}
                   >
+                    {console.log(product.image_url)}
                     <img
                       src={product.image_url}
-                      
                       alt={product.name || "Product"}
                       className="max-w-full h-auto max-h-28 md:max-h-40 object-contain transition-transform duration-500 group-hover:scale-110"
                       onError={(e) => (e.target.src = "/placeholder.png")}
