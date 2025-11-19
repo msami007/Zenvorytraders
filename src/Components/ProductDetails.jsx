@@ -124,7 +124,7 @@ const ProductDetails = () => {
           <p className="text-gray-600 mb-6">The product you're looking for doesn't exist.</p>
           <button
             onClick={() => navigate("/")}
-            className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition"
+            className="bg-[#367588] text-white px-6 py-3 rounded-lg hover:bg-[#2c5d6a] transition"
           >
             Back to Home
           </button>
@@ -218,7 +218,7 @@ const ProductDetails = () => {
               {/* Pricing */}
               <div className="space-y-3">
                 <div className="flex items-baseline gap-3">
-                  <span className="text-5xl font-bold text-[#0b3d91]">
+                  <span className="text-5xl font-bold text-[#367588]">
                     ${product.price_200_500}
                   </span>
                   <span className="text-gray-500 text-lg">per unit</span>
@@ -232,12 +232,12 @@ const ProductDetails = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="bg-white rounded-lg p-4 text-center border">
                     <div className="text-sm text-gray-600">200-500 Units</div>
-                    <div className="text-xl font-bold text-[#0b3d91]">${product.price_200_500}</div>
+                    <div className="text-xl font-bold text-[#367588]">${product.price_200_500}</div>
                     <div className="text-green-600 text-sm">5% OFF</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 text-center border">
                     <div className="text-sm text-gray-600">501+ Units</div>
-                    <div className="text-xl font-bold text-[#0b3d91]">${product.price_500plus}</div>
+                    <div className="text-xl font-bold text-[#367588]">${product.price_500plus}</div>
                     <div className="text-green-600 text-sm">10% OFF</div>
                   </div>
                 </div>

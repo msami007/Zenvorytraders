@@ -89,7 +89,7 @@ const ProductCard = ({ product, onAddToCart }) => {
           e.stopPropagation();
           onAddToCart(product);
         }}
-        className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 bg-orange-500 text-white px-4 py-2 rounded shadow-lg text-sm"
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 bg-[#367588] text-white px-4 py-2 rounded shadow-lg text-sm"
         aria-label={`Add ${product.name} to cart`}
       >
         Add to cart
@@ -178,7 +178,7 @@ const CategoryRow = ({ category, products, onAddToCart }) => {
       {/* "See All Products" button */}
       <div className="text-center mt-6">
         <button
-          className="px-6 py-2 bg-[#0b3d91] text-white rounded-lg hover:bg-[#092b56] transition-all"
+          className="px-6 py-2 bg-[#367588] text-white rounded-lg hover:bg-[#092b56] transition-all"
           onClick={() => alert(`Show all products for ${category}`)}
         >
           See All {category} Products

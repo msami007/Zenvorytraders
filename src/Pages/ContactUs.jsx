@@ -4,21 +4,21 @@ const ContactUs = () => {
   const [form, setForm] = React.useState({ first: '', last: '', email: '', phone: '', subject: 'General Inquiry', msg: '' });
 
   const submitForm = async (e) => {
-  e.preventDefault();
-  await fetch("https://zenvorytradersllc.com/api/send-contact.php",{
-    method:"POST",
-    headers:{ "Content-Type":"application/json" },
-    body:JSON.stringify({
-      firstName: form.first,
-      lastName: form.last,
-      email: form.email,
-      phone: form.phone,
-      subject: form.subject,
-      message: form.msg
-    })
-  });
-  alert("Message sent!");
-};
+    e.preventDefault();
+    await fetch("https://zenvorytradersllc.com/api/send-contact.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        firstName: form.first,
+        lastName: form.last,
+        email: form.email,
+        phone: form.phone,
+        subject: form.subject,
+        message: form.msg
+      })
+    });
+    alert("Message sent!");
+  };
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-16 px-4 sm:px-6 lg:px-8 font-sans">
       {/* Header Section */}
@@ -59,8 +59,8 @@ const ContactUs = () => {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Our Office</h3>
                   <p className="text-gray-700">
-                    30 N Gould Ste 40990 <br />
-                    Sheridan, WY 82801 <br />
+                    5900 BALCONES DR STE 27948<br />
+                    AUSTIN, TX 78731<br />
                     USA
                   </p>
                 </div>
@@ -75,7 +75,7 @@ const ContactUs = () => {
                   <h3 className="font-semibold text-gray-900 mb-2">Call Us</h3>
                   <div className="space-y-2">
                     <p className="text-gray-700">
-                      <span className="font-medium">Pakistan:</span> 330 2090637
+                      <span className="font-medium">USA:</span> +1 51 23255662
                     </p>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ const ContactUs = () => {
 
               {/* Business Hours */}
               <div className="flex items-start gap-4 p-4 bg-orange-50 rounded-2xl hover:bg-orange-100 transition-colors">
-                <div className="w-10 h-10 bg-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-10 h-10 bg-[#2c5d6a] rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white text-lg">🕒</span>
                 </div>
                 <div>
@@ -139,7 +139,7 @@ const ContactUs = () => {
                 <div className="space-y-2">
                   <label className="block text-sm font-medium text-gray-700">First Name *</label>
                   <input
-                    onChange={e=>setForm({...form, first:e.target.value})}
+                    onChange={e => setForm({ ...form, first: e.target.value })}
                     type="text"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -149,7 +149,7 @@ const ContactUs = () => {
                 <div className="space-y-2">
                   <label className="block text-sm font-medium text-gray-700">Last Name *</label>
                   <input
-                    onChange={e=>setForm({...form, last:e.target.value})}
+                    onChange={e => setForm({ ...form, last: e.target.value })}
                     type="text"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -161,7 +161,7 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <label className="block text-sm font-medium text-gray-700">Email Address *</label>
                 <input
-                  onChange={e=>setForm({...form, email:e.target.value})}
+                  onChange={e => setForm({ ...form, email: e.target.value })}
                   type="email"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -172,7 +172,7 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <label className="block text-sm font-medium text-gray-700">Phone Number</label>
                 <input
-                  onChange={e=>setForm({...form, phone:e.target.value})}
+                  onChange={e => setForm({ ...form, phone: e.target.value })}
                   type="tel"
                   className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="+1 (555) 123-4567"
@@ -182,9 +182,9 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <label className="block text-sm font-medium text-gray-700">Subject *</label>
                 <select className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                  onChange={e=>setForm({...form, subject:e.target.value})}
+                  onChange={e => setForm({ ...form, subject: e.target.value })}
                 >
-                  
+
                   <option>General Inquiry</option>
                   <option>Product Information</option>
                   <option>Order Support</option>
@@ -196,7 +196,7 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <label className="block text-sm font-medium text-gray-700">Message *</label>
                 <textarea
-                  onChange={e=>setForm({...form, msg:e.target.value})}
+                  onChange={e => setForm({ ...form, msg: e.target.value })}
                   required
                   rows="6"
                   className="w-full px-4 py-3 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
@@ -241,7 +241,7 @@ const ContactUs = () => {
             <div className="lg:col-span-2">
               <div className="rounded-2xl overflow-hidden shadow-lg h-96">
                 <iframe
-                  title="zenvorytradersllc Traders Location"
+                  title="Zenvory Traders Location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.74292825507!2d-97.75986558488036!3d30.344150881777202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ca2e5b8efb77%3A0x91b8aeb295b64f1b!2s5900%20Balcones%20Dr%20STE%2019007%2C%20Austin%2C%20TX%2078731%2C%20USA!5e0!3m2!1sen!2s!4v1730699943348!5m2!1sen!2s"
                   width="100%"
                   height="100%"
@@ -296,7 +296,7 @@ const ContactUs = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:330 2090637"
+              href="tel:+15123255662"
               className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold hover:bg-gray-100 transform hover:-translate-y-1 transition-all duration-200 shadow-lg"
             >
               📞 Call Now

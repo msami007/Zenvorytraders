@@ -22,7 +22,7 @@ const AboutUs = () => {
         <div className="mb-16 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
           <img
             src="/about-cover.jpg" // Replace with your actual cover image path
-            alt="zenvorytradersllc Traders Distribution Center"
+            alt="Zenvory Traders Distribution Center"
             className="w-full h-64 md:h-96 object-cover"
             onError={(e) => {
               e.target.src = "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80";
@@ -39,7 +39,7 @@ const AboutUs = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
                 <p className="text-xl">
-                In 2005, with a dream to revolutionize the wholesale industry, zenvorytradersllc Traders was born. What started as a small operation with big aspirations has grown into a trusted name in the world of wholesale distribution. Our journey began with a single warehouse, a handful of products, and a passion for connecting retailers with top-quality brands at unbeatable prices.
+                In 2005, with a dream to revolutionize the wholesale industry, Zenvory Traders was born. What started as a small operation with big aspirations has grown into a trusted name in the world of wholesale distribution. Our journey began with a single warehouse, a handful of products, and a passion for connecting retailers with top-quality brands at unbeatable prices.
               </p>
             </div>
           </section>
@@ -51,7 +51,7 @@ const AboutUs = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
                 <p className="text-xl">
-                Our founders envisioned a company that didn't just sell products but built lasting relationships. They believed in the power of integrity, hard work, and exceptional customer service. With these core values at heart, zenvorytradersllc Traders set out on a mission to become a leading supplier of premium products across the USA.
+                Our founders envisioned a company that didn't just sell products but built lasting relationships. They believed in the power of integrity, hard work, and exceptional customer service. With these core values at heart, Zenvory Traders set out on a mission to become a leading supplier of premium products across the USA.
               </p>
             </div>
           </section>
@@ -64,7 +64,7 @@ const AboutUs = () => {
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
                 <p className="text-xl">
                 <strong>Partner with Imaging Supplies Wholesale Group Inc</strong><br />
-                zenvorytradersllc Traders, a leading wholesale distributor in the USA, specializes in offering top-selling brand products at unbeatable prices. All payments for our website, zenvorytradersllc.com, are processed securely through the bank accounts of our trusted partner company, Imaging Supplies Wholesale Group Inc and Go Swift Logistics LLC. This ensures a seamless and reliable transaction process for our customers.
+                Zenvory Traders, a leading wholesale distributor in the USA, specializes in offering top-selling brand products at unbeatable prices. All payments for our website, zenvorytradersllc.com, are processed securely through the bank accounts of our trusted partner company, Imaging Supplies Wholesale Group Inc and Go Swift Logistics LLC. This ensures a seamless and reliable transaction process for our customers.
               </p>
             </div>
           </section>
@@ -76,7 +76,7 @@ const AboutUs = () => {
                 We Love What We Do
               </h2>
               <p className="text-xl md:text-2xl font-light opacity-90">
-                At zenvorytradersllc Traders, our passion drives us to connect you with the best brands, ensuring quality and satisfaction in every product we offer.
+                At Zenvory Traders, our passion drives us to connect you with the best brands, ensuring quality and satisfaction in every product we offer.
               </p>
             </div>
           </section>
@@ -112,7 +112,7 @@ const AboutUs = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
                 <p className="text-xl">
-                At zenvorytradersllc Traders, excellence isn't just a goal; it's our standard. Every product we distribute undergoes rigorous quality checks to ensure it meets our high standards. Our dedicated team works tirelessly to provide exceptional service, offering personalized solutions and expert advice to help our partners succeed.
+                At Zenvory Traders, excellence isn't just a goal; it's our standard. Every product we distribute undergoes rigorous quality checks to ensure it meets our high standards. Our dedicated team works tirelessly to provide exceptional service, offering personalized solutions and expert advice to help our partners succeed.
               </p>
             </div>
           </section>
@@ -139,7 +139,7 @@ const AboutUs = () => {
             </p>
             <div className="bg-white/10 rounded-2xl p-6 inline-block backdrop-blur-sm">
               <p className="text-2xl md:text-3xl font-bold">
-                Welcome to zenvorytradersllc Traders – Where Quality Meets Reliability.
+                Welcome to Zenvory Traders – Where Quality Meets Reliability.
               </p>
             </div>
           </section>

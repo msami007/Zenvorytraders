@@ -124,7 +124,7 @@ export default function Navbar() {
     };
 
     return (
-        <header className="w-full bg-white text-[#0b3d91] shadow-md">
+        <header className="w-full bg-white text-[#367588] shadow-md">
             {/* Top Section - 3 Column Grid Layout */}
             <div className="grid grid-cols-3 items-center px-4 md:px-6 py-3 max-w-7xl mx-auto">
                 {/* Left Section - Search */}
@@ -134,7 +134,7 @@ export default function Navbar() {
                         <input
                             type="text"
                             placeholder="Search products"
-                            className="w-full rounded-full py-2 px-3 pr-10 text-[#0b3d91] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0b3d91]"
+                            className="w-full rounded-full py-2 px-3 pr-10 text-[#367588] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#367588]"
                         />
                         <Search className="absolute right-3 top-2.5 text-gray-500" size={18} />
                     </div>
@@ -142,7 +142,7 @@ export default function Navbar() {
                     {/* Mobile - Hamburger */}
                     <button
                         onClick={() => setMobileMenuOpen(true)}
-                        className="md:hidden p-2 rounded-md text-[#0b3d91] hover:bg-gray-100"
+                        className="md:hidden p-2 rounded-md text-[#367588] hover:bg-gray-100"
                         aria-label="Open menu"
                     >
                         <Menu size={22} />
@@ -165,7 +165,7 @@ export default function Navbar() {
                     {/* Mobile Search Icon */}
                     <button
                         onClick={() => setMobileSearchOpen(!mobileSearchOpen)}
-                        className="md:hidden p-2 rounded-md text-[#0b3d91] hover:bg-gray-100"
+                        className="md:hidden p-2 rounded-md text-[#367588] hover:bg-gray-100"
                         aria-label="Toggle search"
                     >
                         <Search size={20} />
@@ -174,12 +174,12 @@ export default function Navbar() {
                     {/* Mobile Cart */}
                     <button
                         onClick={() => navigate('/cart')}
-                        className="md:hidden relative p-2 rounded-md text-[#0b3d91] hover:bg-gray-100"
+                        className="md:hidden relative p-2 rounded-md text-[#367588] hover:bg-gray-100"
                         aria-label="Open cart"
                     >
                         <ShoppingBag size={20} />
                         {cartCount > 0 && (
-                                <span className="absolute -top-1 -right-1 text-[10px] bg-[#0b3d91] text-white font-bold rounded-full w-4 h-4 flex items-center justify-center">
+                                <span className="absolute -top-1 -right-1 text-[10px] bg-[#367588] text-white font-bold rounded-full w-4 h-4 flex items-center justify-center">
                                 {cartCount}
                             </span>
                         )}
@@ -192,14 +192,14 @@ export default function Navbar() {
                             <>
                                 <button
                                     onClick={() => navigate("/login")}
-                                    className="flex items-center space-x-2 bg-[#0b3d91] text-white px-3 py-2 rounded-full hover:bg-gray-200 hover:text-[#0b3d91] transition"
+                                    className="flex items-center space-x-2 bg-[#367588] text-white px-3 py-2 rounded-full hover:bg-gray-200 hover:text-[#367588] transition"
                                 >
                                     <User size={18} />
                                     <span className="text-sm font-medium">Login</span>
                                 </button>
                                 <button
                                     onClick={() => navigate("/signup")}
-                                    className="flex items-center space-x-2 bg-[#0b3d91] text-white px-3 py-2 rounded-full hover:bg-gray-200 hover:text-[#0b3d91] transition"
+                                    className="flex items-center space-x-2 bg-[#367588] text-white px-3 py-2 rounded-full hover:bg-gray-200 hover:text-[#367588] transition"
                                 >
                                     <User size={18} />
                                     <span className="text-sm font-medium">Register</span>
@@ -209,14 +209,14 @@ export default function Navbar() {
                             <div className="relative">
                                 <button
                                     onClick={() => setProfileOpen(!profileOpen)}
-                                    className="flex items-center space-x-2 bg-[#0b3d91] text-white px-3 py-2 rounded-full hover:bg-gray-200 hover:text-[#0b3d91] transition"
+                                    className="flex items-center space-x-2 bg-[#367588] text-white px-3 py-2 rounded-full hover:bg-gray-200 hover:text-[#367588] transition"
                                 >
                                     <User size={18} />
                                     <span className="text-sm font-medium">{userName}</span>
                                 </button>
 
                                 {profileOpen && (
-                                    <ul className="absolute right-0 mt-2 w-56 bg-white text-[#0b3d91] rounded-lg shadow-lg overflow-hidden z-50">
+                                    <ul className="absolute right-0 mt-2 w-56 bg-white text-[#367588] rounded-lg shadow-lg overflow-hidden z-50">
                                         <li
                                             onClick={() => {
                                                 navigate("/profile");
@@ -249,12 +249,12 @@ export default function Navbar() {
                         {/* Cart */}
                         <button
                             onClick={() => navigate("/cart")}
-                            className="relative flex items-center bg-[#0b3d91] text-white rounded-full px-3 py-2 hover:bg-gray-200 hover:text-[#0b3d91] transition"
+                            className="relative flex items-center bg-[#367588] text-white rounded-full px-3 py-2 hover:bg-gray-200 hover:text-[#367588] transition"
                         >
                             <ShoppingBag size={18} />
                             <span className="ml-2 text-sm font-medium">${cartTotal.toFixed(2)}</span>
                             {cartCount > 0 && (
-                                <span className="absolute -top-1 -right-1 text-xs bg-white text-[#0b3d91] font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                                <span className="absolute -top-1 -right-1 text-xs bg-white text-[#367588] font-bold rounded-full w-5 h-5 flex items-center justify-center">
                                     {cartCount}
                                 </span>
                             )}
@@ -270,7 +270,7 @@ export default function Navbar() {
                         <input
                             type="text"
                             placeholder="Search for products"
-                            className="w-full rounded-full py-2 px-3 pr-12 text-[#0b3d91] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0b3d91]"
+                            className="w-full rounded-full py-2 px-3 pr-12 text-[#367588] border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#367588]"
                         />
                         <Search className="absolute right-3 top-2.5 text-gray-500" size={18} />
                     </div>
@@ -278,7 +278,7 @@ export default function Navbar() {
             )}
 
             {/* Bottom Menu */}
-            <nav className="bg-[#0b3d91] border-t border-white/10">
+            <nav className="bg-[#367588] border-t border-white/10">
                 <ul className="hidden md:flex items-center justify-center space-x-10 px-6 py-4 text-lg font-semibold text-white max-w-7xl mx-auto">
                     {/* Browse Categories */}
                     <li className="relative">
@@ -292,7 +292,7 @@ export default function Navbar() {
                         </button>
 
                         {dropdownOpen && (
-                            <ul className="absolute left-0 mt-2 w-64 bg-white text-[#0b3d91] rounded-lg shadow-lg overflow-hidden z-50">
+                            <ul className="absolute left-0 mt-2 w-64 bg-white text-[#367588] rounded-lg shadow-lg overflow-hidden z-50">
                                 {loading ? (
                                     <li className="px-4 py-2 text-gray-500">Loading...</li>
                                 ) : categories.length > 0 ? (
@@ -347,11 +347,11 @@ export default function Navbar() {
                             <div className="mt-4 flex items-center gap-3">
                                 {!isLoggedIn ? (
                                     <>
-                                        <button onClick={() => { navigate('/login'); setMobileMenuOpen(false); }} className="flex-1 px-3 py-2 bg-[#0b3d91] text-white rounded">Login</button>
-                                        <button onClick={() => { navigate('/signup'); setMobileMenuOpen(false); }} className="flex-1 px-3 py-2 bg-[#f9b233] text-[#0b3d91] rounded">Register</button>
+                                        <button onClick={() => { navigate('/login'); setMobileMenuOpen(false); }} className="flex-1 px-3 py-2 bg-[#367588] text-white rounded">Login</button>
+                                        <button onClick={() => { navigate('/signup'); setMobileMenuOpen(false); }} className="flex-1 px-3 py-2 bg-[#f9b233] text-[#367588] rounded">Register</button>
                                     </>
                                 ) : (
-                                    <button onClick={() => { navigate('/profile'); setMobileMenuOpen(false); }} className="flex-1 px-3 py-2 bg-[#0b3d91] text-white rounded">Account</button>
+                                    <button onClick={() => { navigate('/profile'); setMobileMenuOpen(false); }} className="flex-1 px-3 py-2 bg-[#367588] text-white rounded">Account</button>
                                 )}
                             </div>
 

@@ -104,8 +104,8 @@ const ReturnsRefund = () => {
                 the same item, send us an email at support@brandmasterswholesale.com and send your item to:
               </p>
               <p className="bg-gray-100 p-4 rounded-lg font-medium mb-4">
-                30 N Gould Ste 40990
-                Sheridan, WY 82801
+                5900 BALCONES DR STE 27948
+                AUSTIN, TX 78731
                 USA
               </p>
             </section>
@@ -130,8 +130,8 @@ const ReturnsRefund = () => {
                 To return your product, you should mail your product to our returns address:
               </p>
               <p className="bg-gray-100 p-4 rounded-lg font-medium mb-4">
-                30 N Gould Ste 40990 <br />
-                Sheridan, WY 82801 <br />
+                5900 BALCONES DR STE 27948<br />
+                AUSTIN, TX 78731<br />
                 USA
               </p>
               <p className="mb-4">

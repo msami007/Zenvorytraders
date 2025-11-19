@@ -28,7 +28,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#0b3d91] text-white py-10 px-6 md:px-16">
+    <footer className="bg-[#367588] text-white py-10 px-6 md:px-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 border-b border-gray-700 pb-10">
         {/* Brand Info */}
         <div className="space-y-4">
@@ -39,13 +39,13 @@ const Footer = () => {
           />
           <div className="flex items-start gap-2">
             <MapPin size={18} className="mt-1 text-[#f9b233]" />
-            <p>30 N Gould Ste 40990
-              Sheridan, WY 82801
+            <p>5900 BALCONES DR STE 27948
+              AUSTIN, TX 78731
               USA</p>
           </div>
           <div className="flex items-center gap-2">
             <Phone size={18} className="text-[#f9b233]" />
-            <p>+330 2090637</p>
+            <p>+1 51 23255662</p>
           </div>
           <div className="flex items-center gap-2">
             <Mail size={18} className="text-[#f9b233]" />
@@ -151,9 +151,9 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Email Address"
-              className="w-full md:w-64 px-4 py-2 rounded-md text-[#0b3d91] focus:outline-none"
+              className="w-full md:w-64 px-4 py-2 rounded-md text-[#367588] focus:outline-none"
             />
-            <button className="bg-[#f9b233] text-[#0b3d91] font-semibold py-2 rounded-md hover:bg-yellow-500 transition w-full md:w-auto">
+            <button className="bg-[#f9b233] text-[#367588] font-semibold py-2 rounded-md hover:bg-yellow-500 transition w-full md:w-auto">
               SUBSCRIBE NOW
             </button>
           </div>
@@ -214,7 +214,7 @@ const Footer = () => {
         </div>
 
         <p className="text-center md:text-right">
-          Copyright © 2024 zenvorytradersllc Traders. All rights reserved.
+          Copyright © 2024 Zenvory Traders. All rights reserved.
         </p>
       </div>
     </footer>

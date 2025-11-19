@@ -49,7 +49,7 @@ export default function Signup() {
         onSubmit={handleSubmit}
         className="bg-white p-8 rounded-xl shadow-md w-full max-w-md"
       >
-        <h2 className="text-2xl font-semibold text-center mb-6 text-[#0b3d91]">
+        <h2 className="text-2xl font-semibold text-center mb-6 text-[#367588]">
           Create Account
         </h2>
 
@@ -64,7 +64,7 @@ export default function Signup() {
               value={formData[field]}
               onChange={handleChange}
               required={["full_name", "email", "password"].includes(field)}
-              className="w-full border border-gray-300 p-2 rounded-md focus:ring-2 focus:ring-[#0b3d91]"
+              className="w-full border border-gray-300 p-2 rounded-md focus:ring-2 focus:ring-[#367588]"
             />
           </div>
         ))}
@@ -72,7 +72,7 @@ export default function Signup() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-[#0b3d91] text-white py-2 rounded-md hover:bg-orange-500 transition"
+          className="w-full bg-[#367588] text-white py-2 rounded-md hover:bg-[#367588] transition"
         >
           {loading ? "Creating account..." : "Sign Up"}
         </button>

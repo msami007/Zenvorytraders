@@ -132,7 +132,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center text-white">
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4">
-            zenvorytradersllc TRADERS
+            Zenvory TRADERS
           </h1>
           <p className="text-xl sm:text-2xl text-gray-200">
             Global Trade Excellence
@@ -161,7 +161,7 @@ const Home = () => {
                 onClick={() => setActiveTab(tab)}
                 className={`uppercase text-sm tracking-wide ${
                   activeTab === tab
-                    ? "border-b-2 border-[#0b3d91] pb-1 text-[#0b3d91]"
+                    ? "border-b-2 border-[#367588] pb-1 text-[#367588]"
                     : "text-gray-600"
                 }`}
               >
@@ -201,7 +201,7 @@ const Home = () => {
                   </div>
 
                   <h3
-                    className="text-base font-semibold mb-2 text-gray-800 line-clamp-2 hover:text-[#0b3d91] cursor-pointer"
+                    className="text-base font-semibold mb-2 text-gray-800 line-clamp-2 hover:text-[#367588] cursor-pointer"
                     onClick={() => handleProductClick(product.sku)}
                   >
                     {product.name || "Product Name"}
@@ -238,7 +238,7 @@ const Home = () => {
                       onChange={(e) =>
                         handleQuantityChange(product.sku, e.target.value)
                       }
-                      className="w-12 text-center border border-gray-300 rounded-md p-1 focus:ring-1 focus:ring-[#0b3d91] text-sm"
+                      className="w-12 text-center border border-gray-300 rounded-md p-1 focus:ring-1 focus:ring-[#367588] text-sm"
                       onClick={(e) => e.stopPropagation()}
                     />
                     <button
@@ -246,7 +246,7 @@ const Home = () => {
                         e.stopPropagation();
                         handleAddToCart(product);
                       }}
-                      className="bg-orange-500 text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-orange-600 transition-colors flex items-center gap-1"
+                      className="bg-[#367588] text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-[#2c5d6a] transition-colors flex items-center gap-1"
                     >
                       <ShoppingCart size={16} />
                       Add

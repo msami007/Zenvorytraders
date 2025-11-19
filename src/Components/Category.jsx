@@ -184,14 +184,14 @@ const Category = () => {
               onChange={(e) =>
                 setPriceRange([0, Number(e.target.value)])
               }
-              className="w-full accent-[#0b3d91]"
+              className="w-full accent-[#367588]"
             />
             <div className="text-sm text-gray-700">
               Price: ${priceRange[0]} - ${priceRange[1]}
             </div>
             <button
               onClick={() => setVisibleCount(12)} // reset when filtering
-              className="bg-[#0b3d91] text-white px-4 py-2 rounded hover:bg-[#092b56] mt-2"
+              className="bg-[#367588] text-white px-4 py-2 rounded hover:bg-[#092b56] mt-2"
             >
               Filter
             </button>
@@ -227,7 +227,7 @@ const Category = () => {
                     SKU: <span className="text-gray-700">{product.sku}</span>
                   </div>
                   <div 
-                    className="text-sm font-medium text-gray-900 line-clamp-2 mb-1 cursor-pointer hover:text-[#0b3d91] transition-colors"
+                    className="text-sm font-medium text-gray-900 line-clamp-2 mb-1 cursor-pointer hover:text-[#367588] transition-colors"
                     onClick={() => navigate(`/product/${product.sku}`)}
                   >
                     {product.name}
@@ -251,7 +251,7 @@ const Category = () => {
                       min="1"
                       value={quantities[product.sku] || 1}
                       onChange={(e) => handleQuantityChange(product.sku, e.target.value)}
-                      className="w-12 text-center border border-gray-300 rounded-md p-1 focus:ring-1 focus:ring-[#0b3d91] text-sm"
+                      className="w-12 text-center border border-gray-300 rounded-md p-1 focus:ring-1 focus:ring-[#367588] text-sm"
                       onClick={(e) => e.stopPropagation()}
                     />
                     <button
@@ -259,7 +259,7 @@ const Category = () => {
                         e.stopPropagation();
                         handleAddToCart(product);
                       }}
-                      className="bg-orange-500 text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-orange-600 transition-colors flex items-center gap-1"
+                      className="bg-[#367588] text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-[#2c5d6a] transition-colors flex items-center gap-1"
                     >
                       <ShoppingCart size={16} />
                       Add
@@ -274,7 +274,7 @@ const Category = () => {
               <div className="text-center mt-10">
                 <button
                   onClick={() => setVisibleCount((prev) => prev + 12)}
-                  className="px-6 py-2 bg-[#0b3d91] text-white rounded-lg hover:bg-[#092b56] transition-all"
+                  className="px-6 py-2 bg-[#367588] text-white rounded-lg hover:bg-[#092b56] transition-all"
                 >
                   Next
                 </button>

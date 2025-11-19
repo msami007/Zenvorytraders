@@ -100,7 +100,7 @@ const FeaturedProducts = () => {
     return (
       <section className="w-full py-16 bg-white">
         <div className="max-w-[1500px] mx-auto px-8">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#0b3d91] mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#367588] mb-8">
             Featured Products
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -126,7 +126,7 @@ const FeaturedProducts = () => {
     <section className="w-full py-16 bg-white">
       <div className="max-w-[1500px] mx-auto px-8">
         {/* Title */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#0b3d91] mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#367588] mb-8">
           Featured Products
         </h2>
 
@@ -147,7 +147,7 @@ const FeaturedProducts = () => {
         <div className="text-center mb-8">
           <button
             onClick={fetchFeaturedProducts}
-            className="bg-[#0b3d91] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#092b56] transform hover:-translate-y-1 transition-all duration-200 shadow-lg flex items-center gap-2 mx-auto"
+            className="bg-[#367588] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#092b56] transform hover:-translate-y-1 transition-all duration-200 shadow-lg flex items-center gap-2 mx-auto"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -162,7 +162,7 @@ const FeaturedProducts = () => {
             <p className="text-2xl text-gray-600 mb-4">No products found</p>
               <button
                 onClick={fetchFeaturedProducts}
-                className="bg-[#0b3d91] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#092b56] transition-colors"
+                className="bg-[#367588] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#092b56] transition-colors"
               >
               Try Again
             </button>
@@ -193,7 +193,7 @@ const FeaturedProducts = () => {
 
                 {/* Product Info */}
                 <h3 
-                  className="text-base font-semibold mb-2 text-gray-800 line-clamp-2 cursor-pointer hover:text-[#0b3d91] transition-colors"
+                  className="text-base font-semibold mb-2 text-gray-800 line-clamp-2 cursor-pointer hover:text-[#367588] transition-colors"
                   onClick={() => handleProductClick(product.sku)}
                 >
                   {product.name}
@@ -229,7 +229,7 @@ const FeaturedProducts = () => {
                     min="1"
                     value={quantities[product.sku] || 1}
                     onChange={(e) => handleQuantityChange(product.sku, e.target.value)}
-                    className="w-12 text-center border border-gray-300 rounded-md p-1 focus:ring-1 focus:ring-[#0b3d91] text-sm"
+                    className="w-12 text-center border border-gray-300 rounded-md p-1 focus:ring-1 focus:ring-[#367588] text-sm"
                     onClick={(e) => e.stopPropagation()}
                   />
                   <button
@@ -237,7 +237,7 @@ const FeaturedProducts = () => {
                       e.stopPropagation();
                       handleAddToCart(product);
                     }}
-                    className="bg-orange-500 text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-orange-600 transition-colors flex items-center gap-1"
+                    className="bg-[#367588] text-white px-3 py-1 rounded-lg text-sm font-semibold hover:bg-[#2c5d6a] transition-colors flex items-center gap-1"
                   >
                     <ShoppingCart size={16} />
                     Add
