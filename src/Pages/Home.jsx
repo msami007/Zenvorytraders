@@ -184,7 +184,7 @@ const Home = () => {
             </div>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {console.log(products)}
+              {/* {console.log(products)} */}
               {products.slice(0, 5).map((product, idx) => (
                 <div
                   key={product.sku || idx}
